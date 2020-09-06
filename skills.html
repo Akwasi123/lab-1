@@ -5,11 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
 </head>
+<style>
+    html, body{
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: rgb(226, 33, 123);
+    }
+
+    nav{
+        box-shadow: 5px 5px 10px grey;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 100px;
+        word-spacing: 20px;
+        line-height: 50px;
+    }
+
+    nav .current{
+        color: white;
+    }
+
+    .footer{
+        background: rgb(202, 202, 15);
+        color: black;
+        height: 20px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        font-size: 14pt;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #navbar{
+        background: rgb(202, 202, 15);
+        position: absolute;
+        left: 460px;
+        top: 20px;
+        border: 3px dashed grey;
+        border-radius: 35px;
+        width: 1000px;
+        height: 50px;
+    }
+
+    #background{
+        width: 1920px;
+        height: auto;
+        filter: blur(5px);
+    }
+
+    .skillcont{
+        border: 3px solid transparent;
+        border-radius: 10px;
+        position: absolute;
+        background: white;
+        color: black;
+        padding: 30px;
+        
+        
+    }
+
+    #cont1{
+        left: 150px;
+        top: 150px;
+        font-size: 17pt;
+        width: 600px;
+        height: 600px;
+    }
+
+    #cont2{
+        left: 850px;
+        top: 240px;
+        font-size: 17pt;
+        width: 800px;
+        height: 200px;
+    }
+
+    progress[value]{
+        -webkit-appearance: none;
+        appearance: none;
+        width: 250px;
+        height: 10px;
+    }
+
+    progress[value]::-webkit-progress-bar{
+        background-color: white; 
+    }
+
+    progress[value]::-webkit-progress-value{
+        background-color: rgba(65, 218, 192, 0.795); 
+    }
+
+</style>
 <body>
-    <h1>My Skills</h1>
-    <p>
-        I am quite adept in a lot of computer relate fields such as Programming, UI/UX design and many others.<br />
-        Below is a list of skills i have acquired for myself through school and my own personal efforts over the years:
+    <img src="treeback.jpg" alt="" id="background">
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a class="current" href="skills.html">Skills</a>
+        <a href="coursework.html">Coursework</a>
+        <a href="experience.html">Experiences</a>
+        <a href="projects.html">Projects</a>
+        <a href="Interests.html">Interests</a>
+    </nav>
+    <div class="skillcont" id="cont1">
+        <h1><strong>My Skills</strong></h1>
+        <p>
+            I am quite adept in a lot of computer relate fields such as Programming, UI/UX design and many others.<br />
+            Below is a list of skills i have acquired for myself through school and my own personal efforts over the years:
+            
+        </p>
         <ul>
             <li>Microsoft Word</li>
             <li>Microsoft Excel</li>
@@ -24,23 +138,27 @@
             <li>Experience with JavaScript</li>
         </ul>
         These are basically the different aspects of computer science that i have been exposed to and have some knowledge about.
-    </p>
-    <p>
-        Here is a personal progress list on the above mentioned skills to actually depict how much or how little i know in the respective fields:
+    </div>
+    <div class="skillcont" id="cont2">
+        <p>
+            Here is a personal progress list on the above mentioned skills to actually depict how much or how little i know in the respective fields:
+        </p>
         <ul>
-            <li>MS Word<progress min="0" max="100" value="90" style="position: absolute; left: 100px; top: 2px;"></progress></li>
-            <li>MS Excel<progress min="0" max="100" value="30" style="position: absolute; left: 100px; top: 2px;"></progress></li>
-            <li>English<progress min="0" max="100" value="85" style="position: absolute; left: 100px; top: 2px;"></progress></li>
-            <li>Python<progress min="0" max="100" value="90" style="position: absolute; left: 100px; top: 2px;"></progress></li>
-            <li>Java<progress min="0" max="100" value="95" style="position: absolute; left: 100px; top: 2px;"></progress></li>
-            <li>SQL<progress min="0" max="100" value="75" style="position: absolute; left: 100px; top: 2px;"></progress></li>
-            <li>C++<progress min="0" max="100" value="55" style="position: absolute; left: 100px; top: 2px;"></progress></li>
-            <li>Java FX<progress min="0" max="100" value="60" style="position: absolute; left: 100px; top: 2px;"></progress></li>
-            <li>HTML<progress min="0" max="100" value="80" style="position: absolute; left: 100px; top: 2px;"></progress></li>
-            <li>CSS<progress min="0" max="100" value="78" style="position: absolute; left: 100px; top: 2px;"></progress></li>
+            <li>MS Word<progress min="0" max="100" value="90"  style="position: absolute; left: 200px; top: 136px;"></progress></li>
+            <li>MS Excel<progress min="0" max="100" value="30" style="position: absolute; left: 200px; top: 162px;"></progress></li>
+            <li>English<progress min="0" max="100" value="85"  style="position: absolute; left: 200px; top: 188px;"></progress></li>
+            <li>Python<progress min="0" max="100" value="90"   style="position: absolute; left: 200px; top: 214px;"></progress></li>
+            <li>Java<progress min="0" max="100" value="95"     style="position: absolute; left: 200px; top: 240px;"></progress></li>
+            <li>SQL<progress min="0" max="100" value="75"      style="position: absolute; left: 200px; top: 266px;"></progress></li>
+            <li>C++<progress min="0" max="100" value="55"      style="position: absolute; left: 200px; top: 292px;"></progress></li>
+            <li>Java FX<progress min="0" max="100" value="60"  style="position: absolute; left: 200px; top: 318px;"></progress></li>
+            <li>HTML<progress min="0" max="100" value="80"     style="position: absolute; left: 200px; top: 344px;"></progress></li>
+            <li>CSS<progress min="0" max="100" value="78"      style="position: absolute; left: 200px; top: 370px;"></progress></li>
         </ul>
         I hope to experience new skills and opportunities outside these ones.
-    </p>
-    
+    </div>
+    <div class="footer">
+        &#169 Akwasi's Portfolio.com | Designed by Akwasi Asante-Krobea
+    </div>
 </body>
 </html>

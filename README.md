@@ -12,6 +12,7 @@ Please refer to your lab instructions for definitive directions. In general, clo
 
 
 ## Personalized File Change
+Akwasi Appiadjei Asante-Krobea
 
 This is the first time of using github from the command line.
 Wonderful experience. I hope to learn more.

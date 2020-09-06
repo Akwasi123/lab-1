@@ -5,29 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akwasi Asante-Krobea's Portfolio</title>
 </head>
-<body>
-    <nav>
-        <a href="">Home</a>
-        <a href="">Skills</a>
-        <a href="">Course Work</a>
-        <a href="">Experiences</a>
-        <a href="">Projects</a>
-        <a href="">Interests</a>
+<style>
+    html, body{
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .titleDesign{
+        position: absolute;    
+        font-size: 25pt;  
+        padding:20px;
+        left: 550px; 
+        top: 100px; 
+    }
+    
+
+    #profilepic{
+        position: absolute;
+        top: 200px;
+        border: 3px solid rgb(14, 14, 97); 
+        border-radius: 10px;
+    }
+
+    .namecard{
+        border: 3px dashed lightgoldenrodyellow;
+        background: rgb(202, 202, 15);
+        color: black;
+        padding: 10px;
+        font-size: 17pt; 
+        position: absolute; 
+        left: 130px; 
+        top: 600px;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: rgb(226, 33, 123);
+    }
+
+    nav{
+        box-shadow: 5px 5px 10px grey;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 100px;
+        word-spacing: 20px;
+        line-height: 50px;
+    }
+    
+    nav .current{
+        color: white;
+    }
+    .footer{
+        background: rgb(202, 202, 15);
+        color: black;
+        height: 20px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        font-size: 14pt;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #navbar{
+        background: rgb(202, 202, 15);
+        position: absolute;
+        left: 460px;
+        top: 20px;
+        border: 3px dashed grey;
+        border-radius: 35px;
+        width: 1000px;
+        height: 50px;
+    }
+
+    #background{
+        width: 1920px;
+        height: auto;
+        filter: blur(5px);
+    }
+
+    .mybutton{
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 17pt;
+    }
+</style>
+<body style="padding: 30px;">
+    <img src="treeback.jpg" alt="" id="background">
+    <nav id="navbar">
+        <a class="current" href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="coursework.html">Coursework</a>
+        <a href="experience.html">Experiences</a>
+        <a href="projects.html">Projects</a>
+        <a href="Interests.html">Interests</a>
     </nav>
-    <h1>Akwasi Asante-Krobea</h1>
-    <img src="Akwasi pp.jpg" width="300" height="auto" alt="">
-    <h2>Bio</h2>
-    <p style="font-size: 14pt">
-        Hi there! I am Akwasi Asante-Krobea. I am 20 years old. I am a student<br />
-        of <strong>Ashesi University</strong>, class of 2022 and a <strong>Computer Science</strong> major.<br />
-        I am from Kuntenase, a small town located in Ashanti region and I<br />
-        stay in <strong>Kumasi</strong>. My interests include technology, music, cars and<br />
-        science. I am passionate about programming and my favorite<br />
-        programming language is Java. I am currently taking a Web Tech<br />
-        class which is very interesting and I hope to learn a lot more.
+    <h1 style="font-size: 35pt; position: absolute; left: 35px; top: 100px;"><strong>My Profile</strong></h1>
+    <img src="Akwasi pp.jpg" id="profilepic" width="500" height="auto" alt="">
+    <div class="namecard">
+        Akwasi Appiadjei Asante-Krobea
+        <ul style="position: relative; left: 35px;">
+            <li>Software Developer</li>
+            <li>Tech Enthusiast</li>
+            <li>UI/UX Designer</li>
+        </ul>
+    </div>
+    <h2 class="titleDesign">About Me</h2>
+    <p style="font-size: 16pt; position: absolute; left: 550px; top: 150px; line-height: 35px; padding: 20px;">
+        Hi there! I am Akwasi Asante-Krobea. I am 20 years old. I am a student of <em>Ashesi University</em>, class of 2022 and a <strong>Computer Science</strong> major.
+        I am from Kuntenase, a small town located in Ashanti region and I stay in <strong>Kumasi</strong>. I had my primary school education at <em>The Hilltop School</em> and 
+        continued to <eem>Mfantsipim Senior High</eem>, Cape Coast, for my secondary education.
+        My intersts include:
     </p>
-    <h2>Contact Information</h2>
-    <img src="linkedin icon" alt="" width="25px" height="25px">
-    <a href="https://www.linkedin.com/in/akwasi-asante-9300a4171">Contact Me</a>
+    <ul style="font-size: 16pt; position: absolute; left: 555px; top: 280px; line-height: 25px; text-indent: 10px;">
+        <li>Technology</li>
+        <li>Music</li>
+        <li>Cars</li>
+        <li>Programming</li>
+        <li>Art</li>
+        <li>Exercising and healthcare</li>
+        <li>Science</li>
+    </ul>
+    <p style="font-size: 16pt; position: absolute; left: 550px; top: 450px; line-height: 35px; padding: 20px;">
+        I am extremely passionate about programming, I think it is a great way to envision the world and a doorway to numerous technological possibilites. Java is my favorite programming
+        language because of its object-oriented approach and independence. I am currently taking a Web Tech class which is very interesting and I hope to learn a lot more.
+    </p>
+    <h2 style="font-size: 25pt; position: absolute; left: 550px; top: 580px; line-height: 35px; padding: 20px;">Connect with Akwasi</h2>  
+    <p style="font-size: 17pt; position: absolute; left: 550px; top: 625px; padding: 20px;">Here are my LinkedIn and Github profiles in case you want to contact me: </p>
+    <!--<a href="https://www.linkedin.com/in/akwasi-asante-9300a4171" target="__blank">
+        <button type="button" class="mybutton" style="position: absolute; left: 620px; top: 800px;">My LinkedIn</button>
+    </a>
+    <a href="https://github.com/Akwasi123" target="__blank">
+        <button type="button" class="mybutton" style="position: absolute; left: 580px; top: 800px;">My Github</button>
+    </a>-->
+    <div class="footer">
+        &#169 Akwasi's Portfolio.com | Designed by Akwasi Asante-Krobea
+    </div>
 </body>
 </html>
