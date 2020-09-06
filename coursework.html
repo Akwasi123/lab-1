@@ -6,18 +6,15 @@
     <title>CourseWork</title>
 </head>
 <style>
-    html, body{
-        margin: 0;
-        height: 100%;
-        overflow: hidden;
+    body{
+        margin: 40px;
     }
-    table{
-        color: black;
-        border-color: rgb(202, 202, 15);
-    }
-    table td{
-        padding: 10px;
-        text-align: center;
+
+    .container{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 30px;
+
     }
 
     a{
@@ -30,7 +27,7 @@
     }
 
     nav{
-        box-shadow: 5px 5px 10px grey;
+        box-shadow: 3px 5px 10px grey;
         text-align: center;
         font-size: 28px;
         font-weight: 100px;
@@ -42,66 +39,46 @@
         color: white;
     }
 
-    .footer{
-        background: rgb(202, 202, 15);
-        color: black;
-        height: 20px;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-        font-size: 14pt;
-        padding-top: 20px;
-        padding-bottom: 20px;
+    .item1{
+        border: 3px solid black;
+        border-radius: 10px;
+        font-size: 17pt;
+        line-height: 50px;
+        padding: 20px;
+        
+        
+    }
+
+    .item2{
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        line-height: 50px;
+        font-size: 17pt;
+        width: 1195px;
+        
+        
     }
 
     #navbar{
         background: rgb(202, 202, 15);
-        position: absolute;
-        left: 460px;
-        top: 20px;
         border: 3px dashed grey;
         border-radius: 35px;
-        width: 1000px;
-        height: 50px;
+
     }
 
-    #background{
-        width: 1920px;
-        height: auto;
-        filter: blur(5px);
+    progress::-webkit-progress-bar{
+        align-content: center;
     }
 
-    .skillcont{
-        border: 3px solid transparent;
-        border-radius: 10px;
-        position: absolute;
-        background: white;
-        color: black;
-        padding: 30px;
-        
-        
-    }
-
-    #cont1{
-        left: 150px;
-        top: 150px;
-        font-size: 17pt;
-        width: 600px;
-        height: 600px;
-    }
-
-    #cont2{
-        left: 850px;
-        top: 260px;
-        font-size: 17pt;
-        width: 800px;
-        height: 200px;
+    .footer{
+        background-color: rgb(202, 202, 15);
+        text-align: center;
+        border: 3px solid yellow;
+        padding: 20px;
     }
 </style>
 <body>
-    <img src="treeback.jpg" alt="" id="background">
     <nav id="navbar">
         <a href="index.html">Home</a>
         <a href="skills.html">Skills</a>
@@ -110,47 +87,47 @@
         <a href="projects.html">Projects</a>
         <a href="Interests.html">Interests</a>
     </nav>
-    
-    <div class="skillcont" id="cont1">
-        <h1><strong>COURSE WORK</strong></h1>
-        <p>
-            I am currently in my third year over at <em>Ashesi University</em> and I have managed to complete quite a number of courses over 
-            my three-year stay. Below is a list of Computer Science courses I have completed during my stay here at Ashesi: 
-        </p>
-        First Year:
-        <ul>
-            <li>Into to Computing and Information Systems</li>
-            <li>Computer Programming for CS</li>
-        </ul>
-        Second Year:
-        <ul>
-            <li>Data Structures and Algorithms</li>
-            <li>Discrete Structures and Theory</li>
-            <li>Intermediate Computer Programming</li>
-            <li>Database Systems</li>
-        </ul>
-    </div>
-    <div class="skillcont" id="cont2"> 
-        <p>Here is a further description of the particular year and semester these courses were taken:</p>
-        <table border="3px">
-        <tr>
-            <th></th>
-            <th>First Year</th>
-            <th>Second Year</th>
-        </tr>
-        <tr>
-            <td>Semester 1</td>
-            <td>Intro to Computing and Information Systems</td>
-            <td>Discrete Structures and Theory<br />Data Structures and Algorithms</td>
-        </tr>
-        <tr>
-            <td>Semester 2</td>
-            <td>Computer Programming for CS</td>
-            <td>Intermediate Computer Programming<br />Database Systems</td>    
-        </tr>
-    </table>
-    </div>
-    
+    <h1 style="font-size: 45pt;"><strong>COURSE WORK</strong></h1>
+    <div class="container">
+        <div class="item1">
+            <p>
+                I am currently in my third year over at <em>Ashesi University</em> and I have managed to complete quite a number of courses over 
+                my three-year stay. Below is a list of Computer Science courses I have completed during my stay here at Ashesi: 
+            </p>
+            First Year:
+            <ul>
+                <li>Into to Computing and Information Systems</li>
+                <li>Computer Programming for CS</li>
+            </ul>
+            Second Year:
+            <ul>
+                <li>Data Structures and Algorithms</li>
+                <li>Discrete Structures and Theory</li>
+                <li>Intermediate Computer Programming</li>
+                <li>Database Systems</li>
+            </ul>
+        </div>
+        <div class="item2"> 
+            <p>Here is a further description of the particular year and semester these courses were taken:</p>
+            <table border="3px">
+            <tr>
+                <th></th>
+                <th>First Year</th>
+                <th>Second Year</th>
+            </tr>
+            <tr>
+                <td>Semester 1</td>
+                <td>Intro to Computing and Information Systems</td>
+                <td>Discrete Structures and Theory<br />Data Structures and Algorithms</td>
+            </tr>
+            <tr>
+                <td>Semester 2</td>
+                <td>Computer Programming for CS</td>
+                <td>Intermediate Computer Programming<br />Database Systems</td>    
+            </tr>
+        </table>
+        </div>
+    </div>  
     <div class="footer">
         &#169 Akwasi's Portfolio.com | Designed by Akwasi Asante-Krobea
     </div>
